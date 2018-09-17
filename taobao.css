@@ -172,13 +172,14 @@ html,body{
 
 }
 .wrapper .search-wrap .search-con .search-box .search-bd .search-panel .search-inp-box{
-	width:551px;
-	border:2px solid #ff5000;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-right: none;
-	height:36px;
-	overflow: hidden;
+	margin-right: 74px;
+    border: 2px solid #ff5000;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+    overflow: hidden;
+    height: 36px;
+    width:551px;
 }
 .wrapper .search-wrap .search-con .search-box .search-bd .search-panel .search-inp-box .search-inp{
 	width:472px;
@@ -187,14 +188,14 @@ html,body{
 	
 }
 .wrapper .search-wrap .search-con .search-box .search-bd .search-panel .search-inp-box .search-inp input{
-	width:472px;
-	height:24px;
-	padding:6px 16px;
-	border:none;
-	outline: 0;
-	line-height: 24px;
-	color:#FFF;
-	text-indent: 10px;
+	padding: 6px 16px;
+    text-indent: 10px;
+    height: 24px;
+    line-height: 24px;
+    width: 472px;
+    border: none;
+    outline: 0;
+    background: #FFF;
 }
 .wrapper .search-wrap .search-con .search-panel .sousuo{
 	display: inline-block;
