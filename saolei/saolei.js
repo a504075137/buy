@@ -17,6 +17,7 @@ var alertImg = document.getElementById('alertImg');
 var closeBtn = document.getElementById('close');
 var score = document.getElementById('score');
 var startGameBool = true;
+var count = 0;
 
 bindEvent()
 function bindEvent(){
@@ -46,6 +47,7 @@ function bindEvent(){
         box.style.display = 'none';
         box.innerHTML = '';
         startGameBool = true;
+        count = 0;
     }
 }
 
@@ -96,6 +98,9 @@ function leftClick(dom){
         var posArr = dom && dom.getAttribute('id').split('-');
         var posX = posArr && +posArr[0];
         var posY = posArr && +posArr[1];
+        if (!dom.classList.contains('num')){
+        	count ++;
+        }
         dom && dom.classList.add('num');
         for (var i = posX - 1; i <= posX + 1; i++) {
             for (var j = posY - 1; j <= posY + 1; j++) {
@@ -120,6 +125,11 @@ function leftClick(dom){
             }
         }
 
+        if(count == 90){
+        	alertBox.style.display = 'block';
+			alertImg.style.backgroundImage = 'url("img/success.png")';
+        }
+        
 	}
 }
 function rightClick(dom){
